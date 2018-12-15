@@ -4,7 +4,7 @@ This is my knowledge map.
 
 My knowledge map: https://hoperyy.github.io/knowledge-map
 
-Built by [qute-cli](https://github.com/hoperyy/qute-cli) order `qute docite-push`.
+Built by [qute-cli](https://github.com/hoperyy/qute-cli).
 
 To start local server:
 
