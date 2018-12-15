@@ -26,7 +26,7 @@ Node.js 建立在 [Chrome V8 JavaScript](https://developers.google.com/v8/)  引
 ### 准备阶段
 
 +   Node 安装与配置
-    +   [搭建 Node.js 开发环境与版本控制](./docs/Node.js/docs/Node.js/搭建Node.js开发环境与版本控制/README)
+    +   [搭建 Node.js 开发环境与版本控制](./docs/Node.js/搭建Node.js开发环境与版本控制/README)
     +   [npm 介绍与源控制](./docs/Node.js/npm介绍与源控制/README)
     +   [node 的模块机制](./docs/Node.js/node的模块机制/README)
 +   Node 语言编程特点
