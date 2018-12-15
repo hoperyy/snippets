@@ -1,5 +1,3 @@
-This is my knowledge map.
-
 # My knowledge map
 
 My knowledge map: https://hoperyy.github.io/knowledge-map
