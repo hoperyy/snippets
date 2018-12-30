@@ -23,7 +23,6 @@
         border: 2px solid orange;
         padding: 20px;
         display: flex;
-        flex-flow: wrap;
     }
 
     span {
