@@ -1,6 +1,6 @@
 # My snippets
 
-My knowledge map: https://hoperyy.github.io/snippets
+My snippets: https://hoperyy.github.io/snippets
 
 Built by [qute-cli](https://github.com/hoperyy/qute-cli).
 
