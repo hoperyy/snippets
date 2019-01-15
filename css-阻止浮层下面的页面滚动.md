@@ -1,5 +1,6 @@
 ```js
-$('body').on('touchmove', (e) => {
+document.body.addEventListener('touchmove', function(e) {
     e.preventDefault();
-}, false)
+    e.stopPropagation();
+}, { passive: false });
 ```
