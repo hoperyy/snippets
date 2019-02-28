@@ -2,7 +2,7 @@
 const scrollHandlers = [];
 
 export default {
-    initScrollEvent() {
+    initScrollEvent(callback) {
         let preActTime = 0;
         let curActTime = 0;
         let timer = null;
@@ -20,17 +20,13 @@ export default {
             if (curActTime - preActTime < delay) {
                 clearTimeout(timer);
                 timer = setTimeout(() => {
-                    for (let i = 0; i < scrollHandlers.length; i++) {
-                        scrollHandlers[i]();
-                    }
+                    callback();
                     preActTime = curActTime;
                 }, delay);
             } else {
                 clearTimeout(timer);
                 preActTime = curActTime;
-                for (let i = 0; i < scrollHandlers.length; i++) {
-                    scrollHandlers[i]();
-                }
+                callback();
             }
         });
     },
