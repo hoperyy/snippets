@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import Login from '@vdian/login';
+import Login from 'login';
 
 export default {
     reportError(data) {
