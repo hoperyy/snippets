@@ -21,6 +21,8 @@ function run() {
             console.log('Something went wrong!', err);
         }
     });
+
+    // require('child_process').exec('zip -r -q xxx.zip ./');
 }
 
 ```
