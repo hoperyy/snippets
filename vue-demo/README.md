@@ -1,25 +1,6 @@
 ## 项目名称
 
-店铺资料页-邀请码补填 H5 页
-
-## 二期
-
-- jira：http://wf.vdian.net/browse/WDAPP-9643
-- prd：http://docs.vdian.net/pages/viewpage.action?pageId=70870890
-- PD: 吴元辉
-- 前端RD: 刘远洋
-- 服务端: 张乾石
-- 视觉: 刘印奎
-
-## 一期项目介绍
-
-- jira: http://wf.vdian.net/browse/WDAPP-8903
-- prd: http://docs.vdian.net/pages/viewpage.action?pageId=69993102 
-- url: https://h5.weidian.com/m/invitation-code/index.html
-- PD: 吴元辉
-- 前端RD: 刘远洋
-- 服务端: 张乾石
-- 视觉: 刘印奎
+## 项目介绍
 
 ## 目录结构
 
