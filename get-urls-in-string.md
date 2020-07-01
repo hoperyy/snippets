@@ -7,7 +7,7 @@ function getUrlsInString(string) {
 
     const multiArr = [];
 
-    for (let i  = 0, len = arr.length; i < len; i++) {
+    for (let i = 0, len = arr.length; i < len; i++) {
         // arr[i] 可能的值：http://k.weidian.comhttps://k.weidian.com、https://k.weidian.com、http://k.weidian.com
         let s = arr[i];
 
@@ -41,7 +41,7 @@ function getUrlsInString(string) {
 
 function analyzeStringByUrls(urls, string) {
     if (!urls || urls.length == 0) {
-        return [ { type: 'text', content: string } ];
+        return [{ type: 'text', content: string }];
     }
 
     const url = urls[0];
@@ -50,21 +50,43 @@ function analyzeStringByUrls(urls, string) {
     let rt = [];
 
     for (let i = 0, len = arr.length; i < len; i++) {
-        rt.push(...this.analyzeStringByUrls(urls.slice(1), arr[i]));
+        rt.push(...analyzeStringByUrls(urls.slice(1), arr[i]));
 
         if (i !== len - 1) {
-            rt.push({type: 'url', content: url });
+            rt.push({ type: 'url', content: url });
         }
     }
 
     return rt;
 }
 
-function getAnalyzedStringArr(string) => {
+function getAnalyzedStringArr(string) {
     return analyzeStringByUrls(getUrlsInString(string), string);
 };
 
-const string = `https://k.weidian.comhttp://k.weidian.comhttps://k.weidian.comhttp://k.weidian.comhttps://k.weidian.comhttp://k.baidu.com这就是链接`;
+export default getAnalyzedStringArr;
 
-const urls = getAnalyzedStringArr(string);
+// 
+// [
+//     {
+//         type: "text", 
+//         content: "this is text1 "
+//     },
+//     {
+//         type: "url", 
+//         content: "http://k.weidian.com/ctA3pgtz"
+//     },
+//     {
+//         type: "text", 
+//         content: ""
+//     },
+//     {
+//         type: "url",
+//         content: "http://k.weidian.com/ctA3pgtz"
+//     },
+//     {
+//         type: "text",
+//         content: " #this is text2"
+//     }
+// ]
 ```
