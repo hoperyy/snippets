@@ -1,0 +1,105 @@
+/** index.wxss **/
+.container {
+  padding: 0;
+}
+
+/* 一些全局设置 */
+.body {
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.fontsize-level-0 {
+  font-size: 26rpx;
+}
+
+.fontsize-level-1 {
+  font-size: 28rpx;
+}
+
+.fontsize-level-2 {
+  font-size: 30rpx;
+}
+
+.fontsize-level-3 {
+  font-size: 32rpx;
+}
+
+.fontsize-level-4 {
+  font-size: 34rpx;
+}
+
+.gray {
+  color: #C0C0C0;
+}
+
+.cantap {
+  color: #6495ED;
+}
+
+/* 头部 */
+.header {
+  display: flex;
+  width: 100%;
+  background: #008B8B;
+  padding: 40rpx 0;
+}
+
+.header .lt {
+  color: #fff;
+  padding-left: 40rpx;
+}
+
+.header .lt .name {
+  margin-bottom: 20rpx;
+}
+
+.header .lt,
+.header .rt {
+  flex-basis: 50%;
+}
+
+.header .rt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .rt image {
+  align-self: flex-start;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+
+/* 内容框架 */
+.body .box {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.body .box view {
+  margin: 20rpx 0;
+}
+
+/* 列表 */
+.body .detail-list .list-item {
+  margin: 30rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.body .detail-list .list-item .label {
+  width: 150rpx;
+}
+
+.body .detail-list .list-item .content {
+  margin-right: 20rpx;
+}
+
+/* 欢迎联系 */
+.body .box.contactme {
+  border-bottom: 0;
+}

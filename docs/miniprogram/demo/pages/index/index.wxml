@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="lt">
+            <view class="name fontsize-level-4">全栈手艺人</view>
+            <view class="fontsize-level-2">我是一名全栈工程师</view>
+        </view>
+        <view class="lb"></view>
+        <view class="rb"></view>
+    </view>
+    <view class="body fontsize-level-2">
+        <view class="box">
+            <view>全栈工程师、前端专家、Node 专家</view>
+            <view>前阿里前端，现杭州某电商公司前端架构组负责人</view>
+            <view>github 高产者</view>
+        </view>
+        <view class="detail-list box">
+            <view class="list-item">
+                <text class="label">微信: </text> 
+                <text class="content cantap" bindtap="copyWechat">wechat</text>
+                <text class="gray">点击复制</text> 
+            </view>
+            <view class="list-item">
+                <text class="label">github: </text> 
+                <text class="content cantap" bindtap="copyGithub">github</text>
+                <text class="gray">点击复制</text> 
+            </view>
+            <view class="list-item">
+                <text class="label">界面：</text>
+                <text class="content">Vue/React/jQuery/原生 JS</text>
+            </view>
+            <view class="list-item">
+                <text class="label">Server：</text>
+                <text class="content">Node.js</text>
+            </view>
+            <view class="list-item">
+                <text class="label">风格：</text>
+                <text class="content">注重可维护性 / 代码质量 / 效率</text>
+            </view>
+            <view class="list-item">
+                <text class="label">居住地：</text>
+                <text class="content">浙江省 · 杭州市</text>
+            </view>
+            <view class="list-item">
+                <text class="label">空闲时间：</text>
+                <text class="content">周六/日</text>
+            </view>
+        </view>
+        <view class="box contactme">
+            <view class="fontsize-level-3">欢迎联系开发合作，接受面谈 / 远程</view>
+            <view class="fontsize-level-2">Date: 2018/07/12 ~ now</view>
+        </view>
+    </view>
+</view>
